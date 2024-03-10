@@ -32,10 +32,10 @@ cd sorterfy
 
 ## Usage
 
-To use Sorterfy, run the following command in your terminal:
+To use Sorterfy, run the following command in your terminal. You will use the standalone jar file stored in target:
 
 ```bash
-clojure -M -m sorterfy [input-file] [output-file]
+java -jar target/sorterfy-0.1.0-standalone.jar [input-file] [output-file]
 ```
 
 Replace `[input-file]` with the path to the file you want to sort and `[output-file]` with the path where you want to save the sorted lines.
@@ -43,7 +43,7 @@ Replace `[input-file]` with the path to the file you want to sort and `[output-f
 For example:
 
 ```bash
-clojure -M -m sorterfy unsorted.txt sorted.txt
+java -jar target/sorterfy-0.1.0-standalone.jar unsorted.txt sorted.txt
 ```
 
 This command will read lines from `unsorted.txt`, sort them, and write the sorted lines to `sorted.txt`.
